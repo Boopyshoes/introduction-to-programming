@@ -1,0 +1,28 @@
+1. (32 * 4) >= 129
+32*4 128, so false
+
+2. false != !true
+false because !true is false, so false != false is false
+
+3. true == 4
+false due to type mismatch
+
+4. false == (847 == '847')
+true, because 847 == '847' will evaluate to false because different types
+
+5. (!true || (!(100 / 5) == 20) || ((328 / 4) == 82)) || false
+whoa. ok. let's do some quick evaluation
+(false || (!(20)==20) || ((82) == 82)) || false, the initial and final false can be discarded, leaving
+!(true) || (true), so true, because with the or all we need is 1 true
+
+true, final answer
+
+
+irb tells me:
+1. false
+2. false
+3. false
+4. true
+5. true
+
+5/5 yeah!
